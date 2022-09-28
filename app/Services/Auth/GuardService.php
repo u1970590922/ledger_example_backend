@@ -11,6 +11,13 @@ use Illuminate\Contracts\Auth\StatefulGuard;
 class GuardService implements GuardServiceInterface
 {
     /**
+     * 登出成功訊息
+     * 
+     * @var string
+     */
+    public const LOGOUT_SUCCESS = '登出成功';
+
+    /**
      * 登入成功訊息
      * 
      * @var string
