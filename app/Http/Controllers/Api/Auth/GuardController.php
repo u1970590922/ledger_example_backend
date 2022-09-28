@@ -21,8 +21,7 @@ class GuardController extends BaseApiController
 
         $result = $this->guardService->login($validated);
 
-        //todo
-        return;
+        return $this->jsonResponse($result);
     }
 
     private function validateLogin(Request $request): array
