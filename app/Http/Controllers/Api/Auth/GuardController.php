@@ -24,6 +24,13 @@ class GuardController extends BaseApiController
         return $this->jsonResponse($result);
     }
 
+    public function logout(Request $request)
+    {
+        $this->guardService->logout();
+
+        return $this->jsonResponse(['status' => true, 'message' => '登出成功']);
+    }
+
     private function validateLogin(Request $request): array
     {
         return $request->validate([
