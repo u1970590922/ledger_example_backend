@@ -43,4 +43,5 @@ php artisan serve
 
 ### 登入驗證服務
 - 增加登入(login)
+- 增加登出(logout)
 - 其他待開發
