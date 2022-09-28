@@ -24,7 +24,7 @@ class GuardController extends BaseApiController
         return $this->jsonResponse($result);
     }
 
-    public function logout(Request $request)
+    public function logout()
     {
         $this->guardService->logout();
 
